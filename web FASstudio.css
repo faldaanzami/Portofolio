@@ -727,59 +727,94 @@ hr{
     color: #ccc;
     margin-top: 20px;
 }
-@media (max-width:768px){
+
+
+@media (max-width: 768px){
     .navbar{
         padding: 15px 20px;
         flex-direction: column;
+        gap: 15px;
     }
     .navbar-logo h1{
-        font-size:28px;
+        font-size: 28px;
     }
     .navbar ul{
         flex-wrap: wrap;
-        justify-content:center;
-        margin-top:10px;
+        justify-content: center;
+        gap: 15px;
+    }
+    .home{
+        text-align: center;
+    }
+    .home .isi{
+        max-width: 100%;
+        padding: 1.4rem 5%;
     }
     .isi h1{
-        font-size:30px;
+        font-size: 32px;
     }
     .isi p{
-        font-size:16px;
+        font-size: 16px;
+    }
+    .isi .cta{
+        font-size: 1rem;
+    }
+    .about-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image img{
+        width: 250px;
+    }
+    .skills-container{
+        flex-direction: column;
+        align-items: center;
     }
     .skill-card{
-        width:100%;
+        width: 100%;
+        max-width: 350px;
     }
     .tools-container{
-        flex-wrap:wrap;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .experience{
-        flex-direction:column;
+    .experience-container{
+        flex-direction: column;
+    }
+    .portfolio-container{
+        flex-direction: column;
+        align-items: center;
     }
     .portfolio-card{
-        width:100%;
+        width: 100%;
+        max-width: 350px;
     }
     .project-container{
-        flex-direction:column;
-        align-items:center;
+        flex-direction: column;
+        align-items: center;
     }
     .project-card{
-        width:100%;
-        max-width:350px;
+        width: 100%;
+        max-width: 350px;
+    }
+    .project-card img,
+    .project-card video{
+        height: auto;
     }
     .contact-content{
-        flex-direction:column;
-        text-align:center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-image img{
+        width: 250px;
+    }
+    .contact-text h3{
+        font-size: 28px;
     }
     .footer-container{
-        flex-direction:column;
-        text-align:center;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
     }
-    img{
-    max-width:100%;
-    height:auto;
-    }
-    video{
-    width:100%;
-    height:auto;
-    }
+    .social-icons{justify-content: center;}
 }
