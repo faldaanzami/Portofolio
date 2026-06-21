@@ -728,93 +728,230 @@ hr{
     margin-top: 20px;
 }
 
+/* ===================================
+   MOBILE RESPONSIVE
+=================================== */
 
-@media (max-width: 768px){
+@media (max-width:768px){
     .navbar{
-        padding: 15px 20px;
+        padding: 12px 4%;
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
     .navbar-logo h1{
-        font-size: 28px;
+        font-size: 26px;
     }
     .navbar ul{
-        flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .navbar ul li a{
+        font-size: 14px;
+    }
+    .dropdown-menu{
+        width: 120px;
+        font-size: 13px;
     }
     .home{
+        justify-content: center;
         text-align: center;
+        padding: 50px 4%;
     }
     .home .isi{
-        max-width: 100%;
-        padding: 1.4rem 5%;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding: 25px;
     }
     .isi h1{
-        font-size: 32px;
+        font-size: 28px;
     }
     .isi p{
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 1.8;
     }
-    .isi .cta{
-        font-size: 1rem;
+    .isi .cta,
+    .isi .ctb{
+        font-size: 14px;
+        padding: 10px 18px;
     }
-    .about-container{
+    .vid{
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px 4%;
+    }
+    .vid video{
+        width: 100%;
+        max-width: 350px;
+    }
+    .about{
         flex-direction: column;
         text-align: center;
+        gap: 30px;
+        padding: 70px 5%;
     }
-    .about-image img{
+    .about-img img{
         width: 250px;
+        height: auto;
     }
-    .skills-container{
-        flex-direction: column;
-        align-items: center;
+    .about-content{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        padding: 25px;
+    }
+    .about-content h2{
+        font-size: 28px;
+    }
+    .about-content p{
+        font-size: 14px;
+    }
+    #skills{
+        padding: 80px 5%;
+    }
+    #skills h2{
+        font-size: 28px;
     }
     .skill-card{
         width: 100%;
-        max-width: 350px;
+        max-width: 320px;
     }
-    .tools-container{
-        flex-wrap: wrap;
-        justify-content: center;
+    .skill-card h3{
+        font-size: 18px;
     }
-    .experience-container{
-        flex-direction: column;
+    .skill-card p{
+        font-size: 13px;
     }
-    .portfolio-container{
-        flex-direction: column;
-        align-items: center;
+    .Tools{
+        padding: 80px 5%;
+    }
+    .Tools h2{
+        font-size: 28px;
+    }
+    .Tools-card{
+        width: 130px;
+        height: 130px;
+    }
+    .Tools-card img{
+        width: 50px;
+        height: 50px;
+    }
+    #experience{
+        padding: 80px 5%;
+    }
+    #experience h2{
+        font-size: 28px;
+    }
+    .experience-card{
+        padding: 20px;
+    }
+    .experience-card p{
+        font-size: 14px;
+    }
+    #portfolio{
+        padding: 80px 5%;
+    }
+    #portfolio h2{
+        font-size: 28px;
     }
     .portfolio-card{
         width: 100%;
-        max-width: 350px;
+        max-width: 320px;
+        padding: 20px;
     }
-    .project-container{
-        flex-direction: column;
-        align-items: center;
+    .portfolio-card h3{
+        font-size: 18px;
+    }
+    .portfolio-card p{
+        font-size: 13px;
+    }
+    .product-section,
+    .character-section,
+    .d2-section,
+    .d3-section,
+    .graphic-section{
+        padding: 80px 5%;
+    }
+    .product-section h2,
+    .character-section h2,
+    .d2-section h2,
+    .d3-section h2,
+    .graphic-section h2{
+        font-size: 28px;
+    }
+    .product-section h2:after,
+    .character-section h2:after,
+    .d2-section h2:after,
+    .d3-section h2:after,
+    .graphic-section h2:after{
+        width: 180px;
     }
     .project-card{
         width: 100%;
-        max-width: 350px;
+        max-width: 320px;
     }
-    .project-card img,
+    .project-card img{
+        height: 250px;
+    }
     .project-card video{
-        height: auto;
+        height: 180px;
+    }
+    .project-card h3{
+        font-size: 16px;
+        padding: 15px;
+    }
+    #contact{
+        padding: 80px 5%;
+    }
+    #contact h2{
+        font-size: 28px;
     }
     .contact-content{
         flex-direction: column;
         text-align: center;
     }
     .contact-image img{
-        width: 250px;
+        width: 230px;
     }
     .contact-text h3{
-        font-size: 28px;
+        font-size: 24px;
+    }
+    .contact-text p{
+        font-size: 14px;
+    }
+    .contact-btn{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    footer{
+        padding: 50px 5%;
     }
     .footer-container{
         flex-direction: column;
         text-align: center;
-        gap: 30px;
+        gap: 25px;
     }
-    .social-icons{justify-content: center;}
+    .footer-logo{
+        max-width: 100%;
+    }
+    .footer-logo h1{
+        font-size: 30px;
+    }
+    .footer-logo p,
+    .footer-social p,
+    .footer-contact p,
+    .footer-links a{
+        font-size: 13px;
+    }
+    .social-icons{
+        justify-content: center;
+    }
+    .social-icons a{
+        width: 40px;
+        height: 40px;
+    }
+    .copyright{
+        font-size: 12px;
+    }
 }
