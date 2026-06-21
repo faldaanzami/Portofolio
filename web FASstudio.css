@@ -887,6 +887,12 @@ hr{
     .graphic-section h2:after{
         width: 180px;
     }
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
     .project-card{
         width: 100%;
         max-width: 320px;
