@@ -819,8 +819,8 @@ hr{
         width:100%;
         max-width:100%;
         height:auto;
-        margin-left:0;
         padding:25px;
+        justify-content: center;
     }
     .about-content h2{
         font-size: 28px;
