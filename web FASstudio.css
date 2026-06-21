@@ -827,8 +827,7 @@ hr{
         text-align: center;
     }
     .about-content h2::after{
-        margin-left: auto;
-        margin-right: auto;
+        margin: 10px auto 0;
     }
     .about-content p{
         font-size: 14px;
