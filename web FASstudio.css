@@ -756,7 +756,9 @@ hr{
     .home{
         justify-content: center;
         text-align: center;
-        padding: 50px 4%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 5%;
     }
     .home .isi{
         width: 100%;
@@ -781,10 +783,14 @@ hr{
         flex-direction: column;
         gap: 20px;
         padding: 50px 4%;
+        min-height: auto;
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
     }
     .vid video{
         width: 100%;
-        max-width: 350px;
+        max-width: 320px;
     }
     .about{
         flex-direction: column;
