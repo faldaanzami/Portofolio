@@ -940,15 +940,22 @@ hr{
     }
     .contact-text{
         width: 90%;
-        max-width: 350px;
+        max-width: 330px;
         height: auto;
-        padding: 20px;
+        padding: 18px;
+        text-align: center;
+        background: transparent;
+        border: 2px solid rgba(255,255,255,.2);
+        border-radius: 15px;
+        backdrop-filter: blur(15px);
     }
     .contact-text h3{
         font-size: 24px;
+        margin-bottom: 15px;
     }
     .contact-text p{
         font-size: 14px;
+        line-height: 1.8;
     }
     .contact-btn{
         font-size: 14px;
