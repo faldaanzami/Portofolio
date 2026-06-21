@@ -938,6 +938,12 @@ hr{
     .contact-image img{
         width: 230px;
     }
+    .contact-text{
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        padding: 20px;
+    }
     .contact-text h3{
         font-size: 24px;
     }
