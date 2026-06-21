@@ -782,6 +782,7 @@ hr{
         padding: 50px 4%;
     }
     .vid video{
+        flex:0;
         width: 100%;
         max-width: 350px;
     }
