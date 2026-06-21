@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 15px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navbar-logo h1{
+    font-size: 35px;
+    color: pink;
+}
+.navbar-logo .tec{color: white;}
+.navbar ul{
+    list-style: none;
+    gap: 20px;
+    display: flex;
+}
+.navbar ul li{
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+.navbar ul li a::before{
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 5px;
+    background-color: pink;
+    transition: width 0.3s ease;
+}
+.navbar ul li a:hover{color: pink;}
+.dropdown-menu{
+    position:absolute;
+    margin-top: 0.5rem;
+    background:transparent;
+    backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, .2);
+    border-radius:12px;
+    visibility:hidden;
+    transition:.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    text-align: center;
+}
+.dropdown:hover .dropdown-menu{visibility:visible;}
+.dropdown-menu li{width:100%;}
+.dropdown-menu a{
+    padding:5px 5px;
+    color:white;
+}
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(aset/wp1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .isi{
+    margin-left: 50px;
+    width: 700px;
+    height: 490px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 15px;
+    justify-content: 40px;
+    padding: 20px 30px;
+    backdrop-filter: blur(15px);
+    padding: 1rem 5%;
+}
+.isi:hover{background-color: #111;}
+.isi h1{
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-size: 40px;
+    color: white;
+}
+.isi h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: skyblue;
+}
+.isi p{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+.isi a{text-decoration: none; margin: 5px;}
+.isi .cta{
+    margin-top: 1rem;
+    margin-left: 0;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    color: black;
+    background-color: pink;
+    border-radius: 1rem;
+}
+.isi .ctb{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    color: black;
+    background-color: lightyellow;
+    border-radius: 1rem;
+}
+.vid{
+    flex:1;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    padding:0 4%;
+}
+
+.vid video{
+    width:500px;
+    border-radius:20px;
+}
+.about{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:50px 10%;
+    background-image: url(aset/wp2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.about-img img{
+    height:450px;
+    border-radius:20px;
+}
+.about-content{
+    max-width:600px;
+    height: 380px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 15px;
+    justify-content: 40px;
+    backdrop-filter: blur(20px);
+    padding: 1.4rem 7%;
+}
+.about-content:hover{background-color: #111;}
+.about-content h2{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+.about-content h2::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 4px;
+    border-radius: 10px;
+    background: pink;
+}
+.about-subtitle{
+    margin-bottom: 0.5rem;
+}
+.about-content p{
+    color:whitesmoke;
+    line-height:1.7;
+}
+#skills{
+    padding: 100px 7%;
+    text-align: center;
+    background-image: url(aset/wp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#skills h2{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+#skills h2:after{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    margin: 15px auto;
+    background: skyblue;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.skill-card{
+    width: 300px;
+    padding: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.08);
+    transition: 0.3s ease;
+}
+.skill-card:hover{
+    transform: translateY(-10px);
+    border-color: skyblue;
+    box-shadow:
+    0 0 15px rgba(239,68,68,.3),
+    0 0 25px rgba(59,130,246,.2);
+    background-color: #111;
+}
+.skill-card h3{
+    color: pink;
+    margin-bottom: 10px;
+}
+.skill-card p{
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.Tools{
+    min-height: 100vh;
+    padding: 100px 10%;
+    background: #0D1117;
+    color: white;
+    text-align: center;
+    background-image: url(aset/wp3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Tools h2{
+    font-size: 3rem;
+}
+.Tools h2::after{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 4px;
+    margin: 15px auto;
+    background: pink;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.Tools-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.Tools-card{
+    width: 180px;
+    height: 180px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    transition: .3s;
+}
+.Tools-card:hover{
+    transform: translateY(-10px);
+    border-color: #ef4444;
+    box-shadow:
+    0 0 15px rgba(239,68,68,.3),
+    0 0 25px rgba(59,130,246,.2);
+    background-color: #111;
+}
+.Tools-card img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.Tool-card p{
+    color: #f8fafc;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.Tools-desc{
+    color:#94A3B8;
+    margin-bottom:50px;
+}
+#experience{
+    padding: 100px 7%;
+    text-align: center;
+    background-image: url(aset/wp4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#experience h2{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+#experience h2::after{
+    content: "";
+    display: block;
+    width: 250px;
+    height: 4px;
+    margin: 15px auto;
+    background: skyblue;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.experience-card{
+    max-width: 800px;
+    margin: auto;
+    background-color: transparent;
+    backdrop-filter: blur(35px);
+    padding: 30px;
+    border-left: 5px solid skyblue;
+    border-radius: 10px;
+}
+.experience-card:hover{background-color: #111;}
+.experience-card h3{
+    color: pink;
+    margin-bottom: 10px;
+}
+.company{
+    color: #ccc;
+    margin-bottom: 15px;
+}
+.experience-card p{
+    color: white;
+    line-height: 1.8;
+}
+#portfolio{
+    min-height:100vh;
+    padding:100px 7%;
+    background-image:url(aset/wp5.png);
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+}
+#portfolio h2{
+    color:white;
+    font-size:3rem;
+    margin-bottom:15px;
+}
+#portfolio h2:after{
+    content: "";
+    display: block;
+    width: 250px;
+    height: 4px;
+    margin: 15px auto;
+    background: pink;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.portfolio-subtitle{
+    color:#cbd5e1;
+    margin-bottom:60px;
+    font-size:1rem;
+}
+.portfolio-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+.portfolio-card{
+    width:320px;
+    padding:30px;
+    text-decoration:none;
+    color:white;
+    border:2px solid rgba(255,255,255,.1);
+    border-radius:15px;
+    background:rgba(255,255,255,.03);
+    backdrop-filter:blur(20px);
+    transition:.3s;
+}
+.portfolio-card:hover{
+    transform:translateY(-10px);
+    border-color:skyblue;
+    background:rgba(255,255,255,.05);
+    box-shadow:
+    0 0 15px rgba(135,206,235,.3),
+    0 0 30px rgba(255,192,203,.2);
+    background-color: #111;
+}
+.portfolio-card h3{
+    color:pink;
+    margin-bottom:15px;
+}
+.portfolio-card p{
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+.portfolio-card span{
+    display:inline-block;
+    padding:8px 15px;
+    border-radius:20px;
+    background:rgba(255,255,255,.08);
+    color:skyblue;
+    font-size:.9rem;
+}
+.product-section{
+    min-height:100vh;
+    padding:100px 7%;
+    background-image:url(aset/wp6.png);
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+}
+.product-section h2{
+    text-align:center;
+    color:white;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+.product-section h2:after{
+    content: "";
+    display: block;
+    width: 380px;
+    height: 4px;
+    margin: 15px auto;
+    background: skyblue;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.character-section{
+    min-height:100vh;
+    padding:100px 7%;
+    background-image:url(aset/wp7.png);
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+}
+.character-section h2{
+    text-align:center;
+    color:white;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+.character-section h2:after{
+    content: "";
+    display: block;
+    width: 430px;
+    height: 4px;
+    margin: 15px auto;
+    background: skyblue;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.d2-section{
+    min-height:100vh;
+    padding:100px 7%;
+    background-image:url(aset/wp8.png);
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+}
+.d2-section h2{
+    text-align:center;
+    color:white;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+.d2-section h2:after{
+    content: "";
+    display: block;
+    width: 350px;
+    height: 4px;
+    margin: 15px auto;
+    background: skyblue;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.d3-section{
+    min-height:100vh;
+    padding:100px 7%;
+    background-image:url(aset/wp9.png);
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+}
+.d3-section h2{
+    text-align:center;
+    color:white;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+.d3-section h2:after{
+    content: "";
+    display: block;
+    width: 350px;
+    height: 4px;
+    margin: 15px auto;
+    background: skyblue;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.graphic-section{
+    min-height:100vh;
+    padding:100px 7%;
+    background-image:url(aset/wp10.png);
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+}
+.graphic-section h2{
+    text-align:center;
+    color:white;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+.graphic-section h2:after{
+    content: "";
+    display: block;
+    width: 390px;
+    height: 4px;
+    margin: 15px auto;
+    background: skyblue;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.project-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+.project-card{
+    width:320px;
+    overflow:hidden;
+    border-radius:15px;
+    border: 1px solid rgba(255,255,255,.2);
+    background:transparent;
+    backdrop-filter: blur(30px);
+    transition:.3s;
+}
+.project-card:hover{
+    transform:translateY(-10px);
+    border-color: skyblue;
+    box-shadow:
+    0 0 20px rgba(255,192,203,.2);
+    background-color: #111;
+}
+.project-card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+.project-card video{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+.project-card h3{
+    color:white;
+    padding:20px;
+}
+#contact{
+    padding: 100px 7%;
+    background-image: url(aset/wpblack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#contact h2{
+    text-align: center;
+    color: pink;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+#contact h2:after{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 4px;
+    margin: 15px auto;
+    background: skyblue;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.contact-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.contact-image img{
+    width: 320px;
+    border-radius: 20px;
+}
+.contact-text{
+    max-width: 500px;
+}
+.contact-text h3{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.contact-text p{
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.contact-btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: pink;
+    color: black;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.contact-btn:hover{
+    background-color: white;
+}
+footer{
+    background-color: #111;
+    padding: 60px 7%;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.footer-logo{
+    max-width: 250px;
+}
+.footer-logo h1{
+    font-size: 40px;
+}
+.footer-logo .fas{
+    color: pink;
+}
+.footer-logo .studio{
+    color: white;
+}
+.footer-logo p{
+    color: #ccc;
+    margin-top: 10px;
+}
+.footer-social h3,
+.footer-links h3,
+.footer-contact h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-social p,
+.footer-contact p{
+    color: #ccc;
+    margin-bottom: 10px;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+.footer-links a{
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.footer-links a:hover{
+    color: pink;
+}
+.social-icons{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.social-icons a{
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    background-color: pink;
+    color: black;
+
+    border-radius: 50%;
+    font-weight: bold;
+}
+.social-icons a:hover{
+    background-color: white;
+}
+hr{
+    margin-top: 40px;
+    border: 1px solid #333;
+}
+.copyright{
+    text-align: center;
+    color: #ccc;
+    margin-top: 20px;
+}
