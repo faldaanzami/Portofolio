@@ -777,12 +777,12 @@ hr{
         padding: 10px 18px;
     }
     .vid{
+        flex:0;
         flex-direction: column;
         gap: 20px;
         padding: 50px 4%;
     }
     .vid video{
-        flex:0;
         width: 100%;
         max-width: 350px;
     }
