@@ -177,13 +177,15 @@ html{
     font-size:2rem;
     margin-bottom:10px;
 }
-.about-content h2::after {
+.about-content h2:after {
     content: "";
     display: block;
     width: 40%;
     height: 4px;
+    margin: auto;
     border-radius: 10px;
     background: pink;
+    margin-top: 0.5rem;
 }
 .about-subtitle{
     margin-bottom: 0.5rem;
@@ -824,10 +826,6 @@ hr{
     }
     .about-content h2{
         font-size: 28px;
-        text-align: center;
-    }
-    .about-content h2::after{
-        margin: 10px auto 0;
     }
     .about-content p{
         font-size: 14px;
