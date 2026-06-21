@@ -755,26 +755,25 @@ hr{
     }
     .home{
         display:flex;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
-        padding: 50px 5%;
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;
+        gap:25px;
+        padding:50px 5%;
     }
     .home .isi{
-        width: 100%;
-        max-width: 100%;
-        margin-left: 0;
-        height: auto;
-        padding: 25px;
+        width:100%;
+        max-width:100%;
+        height:auto;
+        margin-left:0;
+        padding:25px;
     }
     .isi h1{
-        font-size: 28px;
+        font-size:28px;
     }
     .isi p{
-        font-size: 14px;
-        line-height: 1.8;
+        font-size:14px;
+        line-height:1.8;
     }
     .isi .cta,
     .isi .ctb{
@@ -783,19 +782,17 @@ hr{
     }
     .vid{
         order:-1;
-        gap: 20px;
-        margin-top: 30px;
-        min-height: auto;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+        min-height:auto;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:0;
     }
     .vid video{
-        width: 100%;
-        max-width: 320px;
-        border-radius: 15px;
+        width:100%;
+        max-width:350px;
+        border-radius:15px;
     }
     .about{
         flex-direction: column;
