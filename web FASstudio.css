@@ -939,19 +939,14 @@ hr{
         width: 230px;
     }
     .contact-text{
-        width: 90%;
-        max-width: 330px;
-        height: auto;
-        padding: 18px;
-        text-align: center;
-        background: transparent;
-        border: 2px solid rgba(255,255,255,.2);
-        border-radius: 15px;
-        backdrop-filter: blur(15px);
+        width:100%;
+        max-width:100%;
+        height:auto;
+        margin-left:0;
+        padding:25px;
     }
     .contact-text h3{
         font-size: 24px;
-        margin-bottom: 15px;
     }
     .contact-text p{
         font-size: 14px;
