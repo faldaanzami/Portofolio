@@ -816,10 +816,11 @@ hr{
         height: auto;
     }
     .about-content{
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-        padding: 25px;
+        width:100%;
+        max-width:100%;
+        height:auto;
+        margin-left:0;
+        padding:25px;
     }
     .about-content h2{
         font-size: 28px;
