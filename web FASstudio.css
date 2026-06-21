@@ -149,7 +149,6 @@ html{
     min-height:100vh;
     display:flex;
     align-items:center;
-    justify-content:space-between;
     gap:60px;
     padding:50px 10%;
     background-image: url(wp2.png);
@@ -161,6 +160,7 @@ html{
 .about-img img{
     height:450px;
     border-radius:20px;
+     justify-content:space-between;
 }
 .about-content{
     max-width:600px;
@@ -168,6 +168,7 @@ html{
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 15px;
+    justify-content: 40px;
     backdrop-filter: blur(20px);
     padding: 1.4rem 7%;
 }
@@ -179,11 +180,10 @@ html{
 .about-content h2:after {
     content: "";
     display: block;
-    width: 250px;
+    width: 40%;
     height: 4px;
     border-radius: 10px;
     background: pink;
-    margin-top: 0.5rem;
 }
 .about-subtitle{
     margin-bottom: 0.5rem;
