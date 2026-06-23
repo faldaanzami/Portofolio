@@ -827,7 +827,7 @@ hr{
         font-size: 28px;
     }
     .about-content h2::after{
-        width: 75%;
+        width: 60%;
         margin:10px auto 0;}
     .about-content p{
         font-size: 14px;
