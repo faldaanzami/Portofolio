@@ -105,6 +105,9 @@ html{
     border-radius: 10px;
     background: skyblue;
 }
+.home-subtitle{
+    font-weight: 600;
+}
 .isi p{
     font-size: 18px;
     color: white;
@@ -187,6 +190,7 @@ html{
 }
 .about-subtitle{
     margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 .about-content p{
     color:whitesmoke;
@@ -311,6 +315,7 @@ html{
 }
 .Tools-desc{
     color:#94A3B8;
+    font-weight: 600;
     margin-top: 0.5rem;
     margin-bottom:50px;
 }
@@ -353,6 +358,7 @@ html{
 }
 .company{
     color: #ccc;
+    font-weight: 600;
     margin-bottom: 15px;
 }
 .experience-card p{
@@ -384,6 +390,7 @@ html{
 }
 .portfolio-subtitle{
     color:#cbd5e1;
+    font-weight: 600;
     margin-bottom:60px;
     font-size:1rem;
 }
