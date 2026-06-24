@@ -611,7 +611,7 @@ html{
 }
 .project-card-kotak video{
     width:100%;
-    height:270px;
+    height:320px;
     object-fit:cover;
 }
 .project-card-kotak h3{
