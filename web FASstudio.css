@@ -589,8 +589,8 @@ html{
     height:220px;
     object-fit:cover;
 }
-project-card-kotak video{
-    width:100%;
+.project-card-kotak video{
+    width:300px;
     height:300px;
     object-fit:cover;
 }
