@@ -598,6 +598,13 @@ html{
     backdrop-filter: blur(30px);
     transition:.3s;
 }
+.project-card-kotak:hover{
+    transform:translateY(-10px);
+    border-color: skyblue;
+    box-shadow:
+    0 0 20px rgba(255,192,203,.2);
+    background-color: #111;
+}
 .project-card-kotak video{
     width:100%;
     height:400px;
