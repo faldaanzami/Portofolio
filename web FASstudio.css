@@ -614,6 +614,10 @@ html{
     color:white;
     padding:20px;
 }
+.project-card-kotak h3{
+    color:white;
+    padding:20px;
+}
 #contact{
     padding: 100px 7%;
     background-image: url(wpblack.jpg);
